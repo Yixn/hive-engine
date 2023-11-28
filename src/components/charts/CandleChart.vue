@@ -69,9 +69,6 @@ const options = ref({
       },
     },
   },
-  time: {
-    unit: 'day'
-  },
   plugins: {
     legend: {
       display: false,
