@@ -46,7 +46,7 @@ const Candlestick = defineChartComponent('CandleStick', 'CustomCandleChart');
 defineProps({
   chartData: { type: Object, required: true },
 });
-
+console.log("asd")
 const options = ref({
   maintainAspectRatio: false,
   scales: {
@@ -68,6 +68,9 @@ const options = ref({
         borderWidth: 0,
       },
     },
+  },
+  time: {
+    unit: 'day'
   },
   plugins: {
     legend: {
