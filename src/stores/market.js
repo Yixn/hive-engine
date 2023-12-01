@@ -14,12 +14,12 @@ const processOrderBook = (orderBook) => {
       const price = Big(o.price);
       const quantity = Big(o.quantity);
       const total = price.times(quantity);
-      const acc = o.account;
+      const account = o.account;
       return {
         price,
         quantity,
         total,
-        acc
+        account
       };
     })
     .reduce((acc, cur) => {
