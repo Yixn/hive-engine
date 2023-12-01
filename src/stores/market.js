@@ -14,15 +14,17 @@ const processOrderBook = (orderBook) => {
       const price = Big(o.price);
       const quantity = Big(o.quantity);
       const total = price.times(quantity);
+      const acc = o.account;
       return {
         price,
         quantity,
-        total
+        total,
+        acc
       };
     })
     .reduce((acc, cur) => {
       const exists = acc.find((o) => o.price.eq(cur.price));
-
+      debugger
       volume = volume.plus(cur.quantity);
       hiveVolume = hiveVolume.plus(cur.total);
 
