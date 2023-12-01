@@ -37,7 +37,7 @@ const processOrderBook = (orderBook) => {
           ...cur,
           volume,
           hive_volume: hiveVolume,
-          account: curr.account
+          account: cur.account
         });
       }
 
