@@ -544,11 +544,11 @@ const buyBookFields = [
 ];
 
 const sellBookFields = [
-  { key: 'account', label: 'Account' },
   { key: 'price', label: 'ASK' },
   { key: 'quantity', label: symbol.value },
   { key: 'total', label: 'HIVE' },
   { key: 'hive_volume', label: 'Total HIVE', class: 'md:hidden lg:table-cell' },
+  { key: 'account', label: 'Account' },
 ];
 
 const openOrdersFields = [
