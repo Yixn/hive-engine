@@ -35,8 +35,7 @@ const processOrderBook = (orderBook) => {
         acc.push({
           ...cur,
           volume,
-          hive_volume: hiveVolume,
-          account:
+          hive_volume: hiveVolume
         });
       }
 
