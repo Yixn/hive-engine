@@ -517,13 +517,12 @@ const hivePrice = computed(() => store.hivePrice);
 const tokens = computed(() => tokenStore.tokens.map((t) => ({ text: t.symbol, value: t.symbol })));
 
 const token = computed(() => marketStore.token);
-const buyBook = computed(() => {
-  console.log(marketStore.buyBookFormatted);
+const buyBook = computed(() =>
   marketStore.buyBookFormatted.map((b) => (
     {
     ...b,
     quantity: b.quantity.toFixed(token.value.precision),
-  }))}
+  })),
 );
 const sellBook = computed(() =>
   marketStore.sellBookFormatted.map((b) => ({

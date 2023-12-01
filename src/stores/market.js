@@ -42,6 +42,8 @@ const processOrderBook = (orderBook) => {
       return acc;
     }, [])
     .map((o) => {
+
+      console.log(o);
       return {
         ...o,
         account: o.account,
