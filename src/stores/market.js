@@ -14,11 +14,10 @@ const processOrderBook = (orderBook) => {
       const price = Big(o.price);
       const quantity = Big(o.quantity);
       const total = price.times(quantity);
-      console.log(o)
       return {
         price,
         quantity,
-        total,
+        total
       };
     })
     .reduce((acc, cur) => {
@@ -37,6 +36,7 @@ const processOrderBook = (orderBook) => {
           ...cur,
           volume,
           hive_volume: hiveVolume,
+          account:
         });
       }
 
@@ -45,6 +45,7 @@ const processOrderBook = (orderBook) => {
     .map((o) => {
       return {
         ...o,
+        account: o.account,
         total: o.total.toFixed(6),
         volume: o.volume.toFixed(8),
         hive_volume: o.hive_volume.toFixed(5),
