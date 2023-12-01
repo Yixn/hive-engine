@@ -24,7 +24,6 @@ const processOrderBook = (orderBook) => {
     })
     .reduce((acc, cur) => {
       const exists = acc.find((o) => o.price.eq(cur.price));
-      debugger
       volume = volume.plus(cur.quantity);
       hiveVolume = hiveVolume.plus(cur.total);
 
@@ -37,7 +36,8 @@ const processOrderBook = (orderBook) => {
         acc.push({
           ...cur,
           volume,
-          hive_volume: hiveVolume
+          hive_volume: hiveVolume,
+          account: curr.account
         });
       }
 
