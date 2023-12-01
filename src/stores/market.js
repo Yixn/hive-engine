@@ -14,7 +14,7 @@ const processOrderBook = (orderBook) => {
       const price = Big(o.price);
       const quantity = Big(o.quantity);
       const total = price.times(quantity);
-
+      console.log(o)
       return {
         price,
         quantity,

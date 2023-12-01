@@ -354,7 +354,7 @@
 
         <custom-table
           :fields="buyBookFields"
-          :items="buyBook.slice(0, 15)"
+          :items="buyBook.slice(0, 50)"
           th-class="md:text-right"
           td-class="md:text-right"
         >
@@ -378,7 +378,7 @@
 
         <custom-table
           :fields="sellBookFields"
-          :items="sellBook.slice(0, 15)"
+          :items="sellBook.slice(0, 50)"
           th-class="md:text-left"
           td-class="md:text-left"
         >
