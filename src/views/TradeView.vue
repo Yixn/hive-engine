@@ -518,7 +518,9 @@ const tokens = computed(() => tokenStore.tokens.map((t) => ({ text: t.symbol, va
 
 const token = computed(() => marketStore.token);
 const buyBook = computed(() =>
-  marketStore.buyBookFormatted.map((b) => ({
+  marketStore.buyBookFormatted.map((b) => (
+    console.log(b)
+    {
     ...b,
     quantity: b.quantity.toFixed(token.value.precision),
   })),
