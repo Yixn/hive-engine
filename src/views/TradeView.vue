@@ -537,12 +537,14 @@ const marketHistory = computed(() => marketStore.marketHistory);
 const buyBookFields = [
   { key: 'hive_volume', label: 'Total HIVE', class: 'md:hidden lg:table-cell' },
   { key: 'total', label: 'HIVE' },
+  { key: 'account', label: 'Account' },
   { key: 'quantity', label: symbol.value },
   { key: 'price', label: 'BID' },
 ];
 
 const sellBookFields = [
   { key: 'price', label: 'ASK' },
+  { key: 'account', label: 'Account' },
   { key: 'quantity', label: symbol.value },
   { key: 'total', label: 'HIVE' },
   { key: 'hive_volume', label: 'Total HIVE', class: 'md:hidden lg:table-cell' },
