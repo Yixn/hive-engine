@@ -142,7 +142,7 @@ export const useMarketStore = defineStore({
 
     async fetchTradeHistory(symbol) {
       try {
-        const tradesHistory = await sidechain.getTradesHistory(symbol, null, 30);
+        const tradesHistory = await sidechain.getTradesHistory(symbol, null, 100);
 
         this.tradesHistory = tradesHistory;
       } catch {
