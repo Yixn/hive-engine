@@ -42,6 +42,21 @@
                 active-class="bg-gray-700 text-white"
                 >Market</router-link
               >
+
+              <MenuItem v-slot="{ active }">
+                <router-link
+                  :to="{ name: 'tokens' }"
+                  :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-gray-700']"
+                  active-class="bg-gray-700 hover:bg-gray-700 text-white"
+                >Tokens</router-link
+                >
+              </MenuItem>
+              <router-link
+                :to="{ name: 'tokens'}"
+                class="text-gray-700 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-bold"
+                active-class="bg-gray-700 text-white"
+                >Token</router-link
+              >
               <!--
               <a
                 v-if="isLoggedIn"
@@ -75,6 +90,14 @@
                   class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
                 >
 
+                  <MenuItem v-slot="{ active }">
+                    <router-link
+                      :to="{ name: 'tokens' }"
+                      :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-gray-700']"
+                      active-class="bg-gray-700 hover:bg-gray-700 text-white"
+                    >Tokens</router-link
+                    >
+                  </MenuItem>
                   <MenuItem v-slot="{ active }">
                     <router-link
                       :to="{ name: 'faq' }"
