@@ -55,7 +55,7 @@
                 :to="{ name: 'tokens'}"
                 class="text-gray-700 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-bold"
                 active-class="bg-gray-700 text-white"
-                >Token</router-link
+                >Tokens</router-link
               >
               <!--
               <a
