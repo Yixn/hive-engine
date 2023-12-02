@@ -50,7 +50,7 @@
                 >Swap</a
               >
               -->
-              <a href="https://beeswap.dcity.io/swap?input=SWAP.HIVE&output=SHARD" target="_blank">Swap</a>
+              <a href="https://beeswap.dcity.io/swap?input=SWAP.HIVE&output=SHARD" class="text-gray-700 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-bold" target="_blank">Swap</a>
               <!-- <router-link
                 v-if="isLoggedIn"
                 :to="{ name: 'sl-market' }"
@@ -224,15 +224,6 @@
             >Buy Crypto</a
           >
         </DisclosureButton> -->
-
-        <DisclosureButton class="w-full text-left">
-          <router-link
-            :to="{ name: 'tokens' }"
-            class="block text-gray-700 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-bold"
-            active-class="bg-gray-700 text-white"
-            >Tokens</router-link
-          >
-        </DisclosureButton>
 
         <DisclosureButton class="w-full text-left">
           <router-link
