@@ -323,6 +323,7 @@ const popularChoices = computed(() => {
       'SPS',
       'CHAOS',
       'VOUCHER',
+      'REBELLION'
     ].includes(tokenSymbol.value)
   ) {
     return [{ text: 'Splinterlands', value: 'steemmonsters' }];
